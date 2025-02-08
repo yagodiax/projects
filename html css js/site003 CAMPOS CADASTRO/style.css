@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .primeiradiva{
+    width: 95%;
+    height: 620px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    }
+    h1{
+    text-align: center;
+    }
+    .segundadiva{
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: absolute;
+    top:20%;
+    left: 40%;;
+    text-align: center;
+    overflow: hidden;
+    font-size: larger;
+    width: 280px;
+    height: 200px;
+    padding-top: 250px;
+    padding-bottom: 5px;
+    }
+    button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: large;
+    
+    font-style: oblique;
+    right: 10px;
+    }
+    .video1{
+    width: 0;
+    }
+    .pipe{
+    position: absolute;
+    top: 35%;
+    left: 45%;;
+    width: 125px;
+    height: 100px;
+    }
