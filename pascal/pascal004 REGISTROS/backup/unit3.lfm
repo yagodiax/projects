@@ -1,0 +1,164 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 421
+  HorizontalOffset = 409
+  VerticalOffset = 160
+  Width = 490
+  object MySQL56Connection1: TMySQL56Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'registro'
+    KeepConnection = True
+    Params.Strings = (
+      'Port=3306'
+    )
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    SkipLibraryVersionCheck = False
+    Left = 232
+    Top = 48
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = MySQL56Connection1
+    Left = 232
+    Top = 112
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'nome_cidade'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'cep_cidade'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'uf_cidade'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 2
+      end>
+    Active = True
+    Database = MySQL56Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from cidade'
+    )
+    Params = <>
+    Macros = <>
+    UpdateMode = upWhereAll
+    Left = 152
+    Top = 192
+  end
+  object DataSource3: TDataSource
+    DataSet = SQLQuery3
+    Left = 312
+    Top = 256
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery2
+    Left = 232
+    Top = 256
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 152
+    Top = 256
+  end
+  object SQLQuery2: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'nome_fornecedor'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'endereco_fornecedor'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'cpf_cnpj'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end>
+    Active = True
+    Database = MySQL56Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from fornecedor'
+    )
+    Params = <>
+    Macros = <>
+    UpdateMode = upWhereAll
+    Left = 232
+    Top = 192
+  end
+  object SQLQuery3: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'nome_produto'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'quantidade_produto'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'validade_produto'
+        DataType = ftDate
+        Precision = -1
+      end    
+      item
+        Name = 'origem_produto'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end>
+    Active = True
+    Database = MySQL56Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from produto'
+    )
+    Params = <>
+    Macros = <>
+    UpdateMode = upWhereChanged
+    Left = 312
+    Top = 192
+  end
+end

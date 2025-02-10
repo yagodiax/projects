@@ -1,0 +1,83 @@
+object Form1: TForm1
+  Left = 462
+  Height = 441
+  Top = 163
+  Width = 442
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 442
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 80
+    Height = 45
+    Top = 64
+    Width = 261
+    Anchors = []
+    BidiMode = bdRightToLeftNoAlign
+    Caption = 'Faça seu cadastro'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    ParentFont = False
+  end
+  object tnome: TEdit
+    Left = 112
+    Height = 23
+    Top = 200
+    Width = 184
+    Alignment = taCenter
+    Anchors = []
+    BidiMode = bdRightToLeftNoAlign
+    ParentBidiMode = False
+    TabOrder = 0
+  end
+  object tsenha: TEdit
+    Left = 112
+    Height = 23
+    Top = 264
+    Width = 184
+    Alignment = taCenter
+    Anchors = []
+    BidiMode = bdRightToLeftNoAlign
+    ParentBidiMode = False
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 112
+    Height = 15
+    Top = 184
+    Width = 142
+    Alignment = taCenter
+    Anchors = []
+    BidiMode = bdRightToLeftNoAlign
+    Caption = 'Insira seu nome de Usuario'
+    ParentBidiMode = False
+  end
+  object Label3: TLabel
+    Left = 112
+    Height = 15
+    Top = 248
+    Width = 84
+    Alignment = taCenter
+    Anchors = []
+    BidiMode = bdRightToLeftNoAlign
+    Caption = 'Insira sua Senha'
+    ParentBidiMode = False
+  end
+  object Button1: TButton
+    Left = 168
+    Height = 25
+    Top = 320
+    Width = 75
+    Anchors = []
+    BidiMode = bdRightToLeftNoAlign
+    Caption = 'Adicionar'
+    ParentBidiMode = False
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+end
