@@ -1,0 +1,25 @@
+object Form2: TForm2
+  Left = 336
+  Height = 113
+  Top = 222
+  Width = 320
+  Caption = 'Form2'
+  ClientHeight = 113
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '3.6.0.0'
+  object Label1: TLabel
+    Left = 80
+    Height = 15
+    Top = 24
+    Width = 147
+    Caption = 'Analisando o Pensamento...'
+  end
+  object ProgressBar1: TProgressBar
+    Left = 104
+    Height = 20
+    Top = 56
+    Width = 100
+    TabOrder = 0
+  end
+end

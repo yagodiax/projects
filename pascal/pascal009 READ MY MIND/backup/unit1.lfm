@@ -1,0 +1,40 @@
+object Form1: TForm1
+  Left = 111
+  Height = 240
+  Top = 219
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '3.6.0.0'
+  object Label1: TLabel
+    Left = 48
+    Height = 21
+    Top = 40
+    Width = 224
+    Caption = 'Pense em um Numero de 1 a 10'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 111
+    Height = 23
+    Top = 96
+    Width = 80
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 88
+    Height = 25
+    Top = 152
+    Width = 123
+    Caption = 'Ler a Minha Mente'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end
